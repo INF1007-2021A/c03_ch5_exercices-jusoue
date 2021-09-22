@@ -24,8 +24,19 @@ def use_prefixes() -> List[str]:
 
 def prime_integer_summation() -> int:
     prime_numbers = []
-    
-    return print(prime_numbers)
+    position = 0
+    number = 2
+    while(position < 100):
+        prime = True
+        for x in range(2, number):
+            if(number % x) == 0:
+                prime = False
+                break
+        if prime:
+            prime_numbers.append(number)
+            position += 1
+        number += 1
+    return sum(prime_numbers)
 
 
 def factorial(number: int) -> int:
@@ -47,20 +58,18 @@ def verify_ages(groups: List[List[int]]) -> List[bool]:
     verif = True
     verifications = []
     for group in groups:
-        if 3 >= len(group) > 10:
-            verif = False
-            verifications.append(verif)
+        if len(group) <= 3 or len(group) > 10:
+            verif
         else:
-            for number in group:
-                if number == 25:
+            for age in group:
+                if age == 25:
                     verif = True
                     break
-                if number < 18:
+                if age < 18:
                     verif = False
-                    continue
-                if number > 70:
+                if age > 70:
                     for group in groups:
-                        if number == 50:
+                        if age == 50:
                             verif = False
                 else:
                     verif = True

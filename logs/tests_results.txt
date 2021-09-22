@@ -1,16 +1,8 @@
 test_absolute (__main__.TestExercice) ... ok
 test_factorial (__main__.TestExercice) ... ok
 test_prefixes (__main__.TestExercice) ... ok
-test_summation (__main__.TestExercice) ... FAIL
+test_summation (__main__.TestExercice) ... ok
 test_verify_ages (__main__.TestExercice) ... FAIL
-
-======================================================================
-FAIL: test_summation (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Users\justi\inf1007-prog\c03_ch5_exercices-jusoue\test_exercice.py", line 47, in test_summation
-    self.assertEqual(
-AssertionError: None != 24133 : Mauvaise réponse
 
 ======================================================================
 FAIL: test_verify_ages (__main__.TestExercice)
@@ -18,16 +10,16 @@ FAIL: test_verify_ages (__main__.TestExercice)
 Traceback (most recent call last):
   File "C:\Users\justi\inf1007-prog\c03_ch5_exercices-jusoue\test_exercice.py", line 74, in test_verify_ages
     self.assertListEqual(
-AssertionError: Lists differ: [False, False, True, True, True, True, True, True, True] != [False, True, False, False, True, True, True, True, False]
+AssertionError: Lists differ: [True, True, True, True, True, True, True, True, True] != [False, True, False, False, True, True, True, True, False]
 
-First differing element 1:
-False
+First differing element 0:
 True
+False
 
-- [False, False, True, True, True, True, True, True, True]
+- [True, True, True, True, True, True, True, True, True]
 + [False, True, False, False, True, True, True, True, False] : Mauvaise réponse
 
 ----------------------------------------------------------------------
 Ran 5 tests in 0.002s
 
-FAILED (failures=2)
+FAILED (failures=1)

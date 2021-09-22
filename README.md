@@ -16,8 +16,8 @@ Compléter les quelques exercices suivants en modifiant le code de [exercice.py]
 6. Vérifier si un groupe est acceptable selon l'âge de plusieurs personnes faisant partie de plusieurs groupes. Vous devez retourner une liste booléenne. Les conditions d'acceptation sont les suivantes:
     - Critère de taille: Si le groupe possède plus que 10 membres ou 3 membres et moins, il n'est pas acceptable
     - Critère d'âge: Si au moins un membre du groupe est mineur, le groupe n'est pas acceptable
-    - Critère d'âge: Si un membre du groupe est plus vieux que 70 ans et qu'un autre membre du groupe à exactement 50 ans, le groupe n'est pas acceptable
-    - Critère d'âge: Si au moins un membre du groupe à exactement 25 ans, alors le groupe est acceptable peut-importe les autres critères d'âges
+    - Critère d'âge: Si un membre du groupe est plus vieux que 70 ans et qu'un autre membre du groupe a exactement 50 ans, le groupe n'est pas acceptable
+    - Critère d'âge: Si au moins un membre du groupe a exactement 25 ans, alors le groupe est acceptable peu importe les autres critères d'âges
 
 ### À compléter
 Vous devez compléter les fonctions suivantes du fichier [exercice.py](exercice.py).
