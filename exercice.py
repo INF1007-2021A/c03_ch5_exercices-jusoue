@@ -24,9 +24,9 @@ def use_prefixes() -> List[str]:
 
 def prime_integer_summation() -> int:
     prime_numbers = []
-    position = 0
+    index = 0
     number = 2
-    while(position < 100):
+    while(index < 100):
         prime = True
         for x in range(2, number):
             if(number % x) == 0:
@@ -34,7 +34,7 @@ def prime_integer_summation() -> int:
                 break
         if prime:
             prime_numbers.append(number)
-            position += 1
+            index += 1
         number += 1
     return sum(prime_numbers)
 
